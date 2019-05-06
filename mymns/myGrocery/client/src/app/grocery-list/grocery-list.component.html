@@ -1,0 +1,336 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <i class='fas fa-shopping-cart' style='font-size:48px;color:white'></i>
+
+  <a class="navbar-brand" href="#">@GrocerySTORE                                      </a>
+  <ul class="nav navbar-nav" color="white">
+                    
+      <li ></li>
+      <li ></li>
+      <li ></li>
+      <li ></li>
+      <li ><button class="btn btn-dark" (click)="log()" type="button" ><b>LOGOUT</b></button>    </li>
+      
+  </ul>
+  </nav>
+<br>
+<br>
+<style>
+.nn {
+  text-align: center;
+  color:red;
+}
+.bt {
+  background-color:blue;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 8px;
+}
+.bx {
+  width: 30%;
+  border: 1px solid black ;
+  padding:15px 32px;
+  margin: 4px 2px;
+  text-align: center;
+}
+.bx1{
+  width: 30%;
+  
+  padding:15px 32px;
+  margin: 4px 2px;
+  text-align: center;
+}
+.bt1 {
+  background-color:greenyellow;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:auto;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 8px;
+  margin-right:auto;
+  position:absolute;
+  left:65%;
+}
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  position: bottom;
+}
+.bt2{
+
+  background-color: black;
+  color: white;
+}
+<!-- not this0-->
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+</style>
+
+<head>
+    <title>GrocerySTORE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+</head>
+  <body>
+  
+  <div class="container">
+               
+    <table class="table table-bordered">
+      
+      <tbody>
+        <tr>
+          <td class="bx1"> 
+             
+                  <img src="assets/images/download.png" hspace="20">
+                <h6>itemname:{{first.itemname}}</h6>
+                <h6>available in stack:{{first.quantity}}</h6>  
+                <div *ngIf="counter1>=4 "  class="nn">
+         
+                    <div class="alert alert-info">
+                        <strong>"Sufficiently in stock"</strong> 
+                      </div>
+                    </div>
+                <div *ngIf="counter1<=3 && counter1 != 0"  class="nn">
+         
+                    <div class="alert alert-warning">
+                        <strong>"Hurry UP!!!!!!!"</strong> 
+                      </div>
+                    </div>
+                <div *ngIf="counter1==0 "  class="nn">
+                 
+                    <div class="alert alert-danger">
+                        <strong>"Item OUT OF STOCK"</strong> 
+                      </div>
+                    </div>
+                    <button class="bt" value="updateTable" (click)="updateTable($event)" type="button" >ADD TO CART</button>    
+              
+          
+          </td>
+          <td class="bx1"> 
+             
+              <img src="assets/images/rusk.png" hspace="20">
+            <h6>itemname:{{secound.itemname}}</h6>
+            <h6>available in stack:{{secound.quantity}}</h6>  
+            <div *ngIf="counter2>=4 "  class="nn">
+         
+                <div class="alert alert-info">
+                    <strong>"Sufficiently in stock"</strong> 
+                  </div>
+                </div>
+            <div *ngIf="counter2<=3 && counter2 != 0"  class="nn">
+     
+                <div class="alert alert-warning">
+                    <strong>"Hurry UP!!!!!!!"</strong> 
+                  </div>
+                </div>
+            <div *ngIf="counter2==0 "  class="nn">
+             
+                <div class="alert alert-danger">
+                    <strong>"Item OUT OF STOCK"</strong> 
+                  </div>
+                </div>
+                <button class="bt" value="updateTable" (click)="updateTable1($event)" type="button" >ADD TO CART</button>    
+          
+      
+      </td>
+      <td class="bx1"> 
+             
+          <img src="assets/images/cake1.png" hspace="20">
+        <h6>itemname:{{third.itemname}}</h6>
+        <h6>available in stack:{{third.quantity}}</h6>  
+        <div *ngIf="counter3>=4 "  class="nn">
+         
+            <div class="alert alert-info">
+                <strong>"Sufficiently in stock"</strong> 
+              </div>
+            </div>
+        <div *ngIf="counter3<=3 && counter3 != 0"  class="nn">
+ 
+            <div class="alert alert-warning">
+                <strong>"Hurry UP!!!!!!!"</strong> 
+              </div>
+            </div>
+        <div *ngIf="counter3==0 "  class="nn">
+         
+            <div class="alert alert-danger">
+                <strong>"Item OUT OF STOCK"</strong> 
+              </div>
+            </div>
+            <button class="bt" value="updateTable" (click)="updateTable2($event)" type="button" >ADD TO CART</button>    
+      
+  
+  </td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+  
+  </body>
+
+<br><br>
+  
+
+<h3>My Cart</h3>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>itemname</th>
+        <th>quantity</th>
+        <th>Cost Price</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{first.itemname}}</td>
+            <td>{{ctr1}}*{{cost1}}</td>
+            <td>{{totalcost1}}</td>
+          </tr>
+      <tr>
+        <td>{{secound.itemname}}</td>
+        <td>{{ctr2}}*{{cost2}}</td>
+        <td>{{totalcost2}}</td>
+      </tr>
+      <tr>
+          <td>{{third.itemname}}</td>
+          <td>{{ctr3}}*{{cost3}}</td>
+          <td>{{totalcost3}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><b>TOTAL COST</b></td>
+            <td><b>{{bill}}</b></td>
+          </tr>
+    </tbody>
+  </table>
+  <button  value="buy2" (click)="buy($event)" class= "bt1"  type="button" >BUY</button>
+  <br><br>  <br><br>  <br><br>
+ 
+  
+
+  <footer id="footer">
+      <div class="footer" >
+          
+          <p style="text-align: center; padding-top: 10px;">©GroceryMARTindutries LTD. </p>
+        <br>
+        </div>
+    </footer>
+
+    

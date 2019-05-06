@@ -1,0 +1,21 @@
+======Module And Team Details=======
+
+Module: TSL-2.0 Inventory Management- Stocks
+
+Problem Statement: A vendor might run out of few of his supplies. To a
+		  vendor, it’s a message that he has to order and for a
+		  customer it’s a message of item unavailable.
+		  Think of a design on how this can be achieved
+		  where you have an inventory database. Design
+		  appropriate front end pages where a vendor can
+		  manage it. Handle the scenario with appropriate
+		  error conditions that could occur.
+
+TEAM:
+-------	
+			          USN             Email-ID
+			      ------------	------------	
+	1.Apoorva Hegde     ->01fe16bcs040 -> apoorvachipgi@gmail.com
+	2.Apoorva Malemath  ->01fe16bcs041 -> apoorvamalemath@gmail.com
+	3.Ganesh Jadhav     ->01fe16bcs070 -> ganeshjadhav221b@gmail.com
+	4.H Hemanth Kumar   ->01fe16bcs073 -> hemanth13k@gmail.com	
